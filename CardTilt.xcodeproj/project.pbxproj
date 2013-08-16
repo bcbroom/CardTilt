@@ -17,7 +17,8 @@
 		D392E1CF17BDAE90002F87D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1CE17BDAE90002F87D9 /* Default@2x.png */; };
 		D392E1D117BDAE90002F87D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1D017BDAE90002F87D9 /* Default-568h@2x.png */; };
 		D392E1D417BDAE90002F87D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392E1D217BDAE90002F87D9 /* MainStoryboard.storyboard */; };
-		D392E1D717BDAE90002F87D9 /* CTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E1D617BDAE90002F87D9 /* CTViewController.m */; };
+		D392E1E717BE8A89002F87D9 /* CTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E1E617BE8A89002F87D9 /* CTMainViewController.m */; };
+		D392E1EA17BE9020002F87D9 /* CTCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E1E917BE9020002F87D9 /* CTCardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +36,10 @@
 		D392E1CE17BDAE90002F87D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D392E1D017BDAE90002F87D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D392E1D317BDAE90002F87D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D392E1D517BDAE90002F87D9 /* CTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTViewController.h; sourceTree = "<group>"; };
-		D392E1D617BDAE90002F87D9 /* CTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTViewController.m; sourceTree = "<group>"; };
+		D392E1E517BE8A89002F87D9 /* CTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMainViewController.h; sourceTree = "<group>"; };
+		D392E1E617BE8A89002F87D9 /* CTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMainViewController.m; sourceTree = "<group>"; };
+		D392E1E817BE9020002F87D9 /* CTCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCardCell.h; sourceTree = "<group>"; };
+		D392E1E917BE9020002F87D9 /* CTCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCardCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +89,10 @@
 				D392E1C917BDAE90002F87D9 /* CTAppDelegate.h */,
 				D392E1CA17BDAE90002F87D9 /* CTAppDelegate.m */,
 				D392E1D217BDAE90002F87D9 /* MainStoryboard.storyboard */,
-				D392E1D517BDAE90002F87D9 /* CTViewController.h */,
-				D392E1D617BDAE90002F87D9 /* CTViewController.m */,
+				D392E1E817BE9020002F87D9 /* CTCardCell.h */,
+				D392E1E917BE9020002F87D9 /* CTCardCell.m */,
+				D392E1E517BE8A89002F87D9 /* CTMainViewController.h */,
+				D392E1E617BE8A89002F87D9 /* CTMainViewController.m */,
 				D392E1C117BDAE90002F87D9 /* Supporting Files */,
 			);
 			path = CardTilt;
@@ -176,7 +181,8 @@
 			files = (
 				D392E1C717BDAE90002F87D9 /* main.m in Sources */,
 				D392E1CB17BDAE90002F87D9 /* CTAppDelegate.m in Sources */,
-				D392E1D717BDAE90002F87D9 /* CTViewController.m in Sources */,
+				D392E1E717BE8A89002F87D9 /* CTMainViewController.m in Sources */,
+				D392E1EA17BE9020002F87D9 /* CTCardCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 				D392E1DC17BDAE90002F87D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
