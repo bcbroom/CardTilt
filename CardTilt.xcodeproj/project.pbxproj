@@ -19,6 +19,11 @@
 		D392E1D417BDAE90002F87D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D392E1D217BDAE90002F87D9 /* MainStoryboard.storyboard */; };
 		D392E1E717BE8A89002F87D9 /* CTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E1E617BE8A89002F87D9 /* CTMainViewController.m */; };
 		D392E1EA17BE9020002F87D9 /* CTCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D392E1E917BE9020002F87D9 /* CTCardCell.m */; };
+		D392E1F017BE9500002F87D9 /* fb.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1EB17BE9500002F87D9 /* fb.png */; };
+		D392E1F117BE9500002F87D9 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1EC17BE9500002F87D9 /* twitter.png */; };
+		D392E1F217BE9500002F87D9 /* profileray.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1ED17BE9500002F87D9 /* profileray.png */; };
+		D392E1F317BE9500002F87D9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = D392E1EE17BE9500002F87D9 /* background.png */; };
+		D392E1F417BE9500002F87D9 /* TeamMembers.json in Resources */ = {isa = PBXBuildFile; fileRef = D392E1EF17BE9500002F87D9 /* TeamMembers.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		D392E1E617BE8A89002F87D9 /* CTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMainViewController.m; sourceTree = "<group>"; };
 		D392E1E817BE9020002F87D9 /* CTCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCardCell.h; sourceTree = "<group>"; };
 		D392E1E917BE9020002F87D9 /* CTCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCardCell.m; sourceTree = "<group>"; };
+		D392E1EB17BE9500002F87D9 /* fb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fb.png; sourceTree = "<group>"; };
+		D392E1EC17BE9500002F87D9 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		D392E1ED17BE9500002F87D9 /* profileray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileray.png; sourceTree = "<group>"; };
+		D392E1EE17BE9500002F87D9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		D392E1EF17BE9500002F87D9 /* TeamMembers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TeamMembers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,11 @@
 		D392E1C117BDAE90002F87D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D392E1EB17BE9500002F87D9 /* fb.png */,
+				D392E1EC17BE9500002F87D9 /* twitter.png */,
+				D392E1ED17BE9500002F87D9 /* profileray.png */,
+				D392E1EE17BE9500002F87D9 /* background.png */,
+				D392E1EF17BE9500002F87D9 /* TeamMembers.json */,
 				D392E1C217BDAE90002F87D9 /* CardTilt-Info.plist */,
 				D392E1C317BDAE90002F87D9 /* InfoPlist.strings */,
 				D392E1C617BDAE90002F87D9 /* main.m */,
@@ -169,6 +184,11 @@
 				D392E1CF17BDAE90002F87D9 /* Default@2x.png in Resources */,
 				D392E1D117BDAE90002F87D9 /* Default-568h@2x.png in Resources */,
 				D392E1D417BDAE90002F87D9 /* MainStoryboard.storyboard in Resources */,
+				D392E1F017BE9500002F87D9 /* fb.png in Resources */,
+				D392E1F117BE9500002F87D9 /* twitter.png in Resources */,
+				D392E1F217BE9500002F87D9 /* profileray.png in Resources */,
+				D392E1F317BE9500002F87D9 /* background.png in Resources */,
+				D392E1F417BE9500002F87D9 /* TeamMembers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

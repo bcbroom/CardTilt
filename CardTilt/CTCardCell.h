@@ -10,4 +10,6 @@
 
 @interface CTCardCell : UITableViewCell
 
+@property (strong, nonatomic) NSDictionary *contact;
+
 @end
