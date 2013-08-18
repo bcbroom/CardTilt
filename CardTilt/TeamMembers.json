@@ -1,7 +1,34 @@
 {
     "team" : [
-    { "name":"Pawel 'Kender' Maczewski",
-        "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email.",
-        "image":"35.thumbnail.jpg"}
-    ]
+              {
+              "name":"Pawel 'Kender' Maczewski",
+              "title": "Tutorial Team Member",
+              "location": "Warszawa, Poland",
+              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email.",
+              "image":"profileray.png",
+              "web": "http://www.raywenderlich.com",
+              "twitter": "http://www.twitter.com"
+              
+              },
+              {
+              "name":"Ray Wenderlich",
+              "title": "Tutorial Team Member",
+              "location": "Massanutten, VA",
+              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email.",
+              "image":"profileray.png",
+              "web": "http://www.raywenderlich.com",
+              "twitter": "http://www.twitter.com",
+              "facebook": "http://www.facebook.com"
+              },
+              {
+              "name":"Wenderlich Ray",
+              "title": "Tutorial Team Member",
+              "location": "Massanutten, VA",
+              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email.",
+              "image":"profileray.png",
+              "web": "http://www.raywenderlich.com",
+              "twitter": "http://www.twitter.com",
+              "facebook": "http://www.facebook.com"
+              }
+  ]
 }

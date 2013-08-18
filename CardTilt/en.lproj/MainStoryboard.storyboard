@@ -8,7 +8,7 @@
         <scene sceneID="mTH-LK-gcV">
             <objects>
                 <tableViewController id="4J9-Z4-XlD" customClass="CTMainViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="378" sectionHeaderHeight="22" sectionFooterHeight="22" id="chs-cS-NGS">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="378" sectionHeaderHeight="22" sectionFooterHeight="22" id="chs-cS-NGS">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,7 +29,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="profileray.png" id="h4J-yd-wJG" userLabel="photo">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="h4J-yd-wJG" userLabel="photo">
                                                     <rect key="frame" x="0.0" y="0.0" width="287" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
@@ -44,7 +44,7 @@
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="First Lastname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpg-uu-fm5" userLabel="nameLabel">
-                                                    <rect key="frame" x="10" y="118" width="210" height="32"/>
+                                                    <rect key="frame" x="10" y="118" width="267" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -138,6 +138,20 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="aboutLabel" destination="y1b-hk-UUv" id="HSt-hf-QPy"/>
+                                    <outlet property="fbButton" destination="8gF-Kz-1pD" id="FI8-5k-q0r"/>
+                                    <outlet property="fbImage" destination="eD3-1E-tyW" id="s9L-hA-J6u"/>
+                                    <outlet property="locationLabel" destination="zMI-vY-K0A" id="Amp-KH-Ukn"/>
+                                    <outlet property="mainView" destination="hDK-Vk-Z1s" id="B2c-hh-mK6"/>
+                                    <outlet property="nameLabel" destination="lpg-uu-fm5" id="EAj-GF-EjQ"/>
+                                    <outlet property="profilePhoto" destination="h4J-yd-wJG" id="MAt-jL-A1c"/>
+                                    <outlet property="titleLabel" destination="lb9-G3-5rw" id="Syw-II-XLf"/>
+                                    <outlet property="twButton" destination="DEX-Yr-PbS" id="TkS-6O-teO"/>
+                                    <outlet property="twImage" destination="xLt-kr-1WZ" id="2Ni-pE-BjP"/>
+                                    <outlet property="webButton" destination="t7m-Zk-dpU" id="ANf-h1-TQj"/>
+                                    <outlet property="webLabel" destination="wOb-ax-pU4" id="F95-Th-P9Q"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -153,9 +167,30 @@
     </scenes>
     <resources>
         <image name="fb.png" width="14" height="28"/>
-        <image name="profileray.png" width="574" height="301"/>
         <image name="twitter.png" width="32" height="22"/>
     </resources>
+    <classes>
+        <class className="CTCardCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CTCardCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aboutLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="fbImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="twButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="webButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="webLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CTMainViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CTMainViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

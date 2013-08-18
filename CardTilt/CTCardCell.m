@@ -7,9 +7,13 @@
 //
 
 #import "CTCardCell.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface CTCardCell ()
-
+@interface CTCardCell () {
+    NSString *website;
+    NSString *twitter;
+    NSString *facebook;
+}
 
 @end
 
@@ -24,6 +28,39 @@
     return self;
 }
 
+- (void)setupWithDictionary:(NSDictionary *)dictionary
+{
+    self.mainView.layer.cornerRadius = 10;
+    self.mainView.layer.masksToBounds = YES;    
+    
+    self.profilePhoto.image = [UIImage imageNamed:[dictionary valueForKey:@"image"]];
+    
+    self.nameLabel.text = [dictionary valueForKey:@"name"];
+    self.titleLabel.text = [dictionary valueForKey:@"title"];
+    self.locationLabel.text = [dictionary valueForKey:@"location"];
+    self.aboutLabel.text = [dictionary valueForKey:@"about"];
+    
+    website = [dictionary valueForKey:@"web"];
+    if (website) {
+        self.webLabel.text = [dictionary valueForKey:@"web"];
+    } else {
+        self.webLabel.hidden = YES;
+        self.webButton.hidden = YES;
+    }
+    
+    twitter = [dictionary valueForKey:@"twitter"];
+    if (!twitter) {
+        self.twImage.hidden = YES;
+        self.twButton.hidden = YES;
+    }
+    
+    facebook = [dictionary valueForKey:@"facebook"];
+    if (!facebook) {
+        self.fbImage.hidden = YES;
+        self.fbButton.hidden = YES;
+    }
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
@@ -33,21 +70,24 @@
 
 - (IBAction)launchWeb:(id)sender
 {
-    NSString *webURL = @"http://www.raywenderlich.com";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:webURL]];
+    if (website) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:website]];
+    }
 }
 
 - (IBAction)launchTwitter:(id)sender
 {
-    NSString *twitterURL = @"http://www.twitter.com";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:twitterURL]];
+    if (twitter) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:twitter]];
+    }
 }
 
 
 - (IBAction)launchFacebook:(id)sender
 {
-    NSString *facebookURL = @"http://www.facebook.com";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:facebookURL]];
+    if (facebook) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:facebook]];
+    }
 }
 
 @end
