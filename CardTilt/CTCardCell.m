@@ -38,7 +38,10 @@
     self.nameLabel.text = [dictionary valueForKey:@"name"];
     self.titleLabel.text = [dictionary valueForKey:@"title"];
     self.locationLabel.text = [dictionary valueForKey:@"location"];
-    self.aboutLabel.text = [dictionary valueForKey:@"about"];
+    
+    NSString *aboutText = [dictionary valueForKey:@"about"];
+    NSString *newlineString = @"\n";        
+    self.aboutLabel.text = [aboutText stringByReplacingOccurrencesOfString:@"\\n" withString:newlineString];
     
     website = [dictionary valueForKey:@"web"];
     if (website) {
