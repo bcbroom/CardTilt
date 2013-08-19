@@ -64,6 +64,18 @@
     return [self.members count];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIFont *font = [UIFont fontWithName:@"HelveticaNeue-Light" size:10];
+    NSString *aboutText = _members[indexPath.row][@"about"];
+    NSString *newlineString = @"\n";
+    NSString *newAboutText = [aboutText stringByReplacingOccurrencesOfString:@"\\n" withString:newlineString];
+    CGSize aboutSize = [newAboutText sizeWithFont:font
+                              constrainedToSize:CGSizeMake(268, 4000)];
+    
+    return (280-15+aboutSize.height);
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Card";
