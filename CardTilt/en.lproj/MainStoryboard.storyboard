@@ -94,7 +94,7 @@
                                                             <rect key="frame" x="225" y="7" width="16" height="11"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DEX-Yr-PbS" userLabel="twButton">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DEX-Yr-PbS" userLabel="fbButton">
                                                             <rect key="frame" x="247" y="1" width="32" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -106,14 +106,14 @@
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                             <connections>
-                                                                <action selector="launchTwitter:" destination="h9m-2R-9Yr" eventType="touchUpInside" id="WbZ-ls-iG9"/>
+                                                                <action selector="launchFacebook:" destination="h9m-2R-9Yr" eventType="touchUpInside" id="U6j-8c-zFh"/>
                                                             </connections>
                                                         </button>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="fb.png" id="eD3-1E-tyW" userLabel="fbImage">
                                                             <rect key="frame" x="260" y="5" width="7" height="14"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8gF-Kz-1pD" userLabel="fbButton">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8gF-Kz-1pD" userLabel="twButton">
                                                             <rect key="frame" x="217" y="0.0" width="32" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -125,7 +125,7 @@
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                             <connections>
-                                                                <action selector="launchFacebook:" destination="h9m-2R-9Yr" eventType="touchUpInside" id="Gnv-0t-mra"/>
+                                                                <action selector="launchTwitter:" destination="h9m-2R-9Yr" eventType="touchUpInside" id="S46-cj-tgO"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -139,14 +139,14 @@
                                 </view>
                                 <connections>
                                     <outlet property="aboutLabel" destination="y1b-hk-UUv" id="HSt-hf-QPy"/>
-                                    <outlet property="fbButton" destination="8gF-Kz-1pD" id="FI8-5k-q0r"/>
+                                    <outlet property="fbButton" destination="DEX-Yr-PbS" id="8ct-bI-WgU"/>
                                     <outlet property="fbImage" destination="eD3-1E-tyW" id="s9L-hA-J6u"/>
                                     <outlet property="locationLabel" destination="zMI-vY-K0A" id="Amp-KH-Ukn"/>
                                     <outlet property="mainView" destination="hDK-Vk-Z1s" id="B2c-hh-mK6"/>
                                     <outlet property="nameLabel" destination="lpg-uu-fm5" id="EAj-GF-EjQ"/>
                                     <outlet property="profilePhoto" destination="h4J-yd-wJG" id="MAt-jL-A1c"/>
                                     <outlet property="titleLabel" destination="lb9-G3-5rw" id="Syw-II-XLf"/>
-                                    <outlet property="twButton" destination="DEX-Yr-PbS" id="TkS-6O-teO"/>
+                                    <outlet property="twButton" destination="8gF-Kz-1pD" id="0kT-t8-ddV"/>
                                     <outlet property="twImage" destination="xLt-kr-1WZ" id="2Ni-pE-BjP"/>
                                     <outlet property="webButton" destination="t7m-Zk-dpU" id="ANf-h1-TQj"/>
                                     <outlet property="webLabel" destination="wOb-ax-pU4" id="F95-Th-P9Q"/>
@@ -173,6 +173,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CTCardCell.h"/>
             <relationships>
                 <relationship kind="action" name="launchFacebook:"/>
+                <relationship kind="action" name="launchTwitter:"/>
+                <relationship kind="action" name="launchWeb:"/>
                 <relationship kind="outlet" name="aboutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="fbImage" candidateClass="UIImageView"/>
