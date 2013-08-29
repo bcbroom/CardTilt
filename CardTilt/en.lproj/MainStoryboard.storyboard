@@ -173,7 +173,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CTCardCell.h"/>
             <relationships>
                 <relationship kind="action" name="launchFacebook:"/>
-                <relationship kind="action" name="launchWeb:"/>
                 <relationship kind="outlet" name="aboutLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="fbImage" candidateClass="UIImageView"/>
