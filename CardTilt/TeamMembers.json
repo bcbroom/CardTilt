@@ -1,34 +1,78 @@
 {
     "team" : [
               {
-              "name":"Pawel 'Kender' Maczewski",
-              "title": "Tutorial Team Member",
-              "location": "Warszawa, Poland",
-              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email. Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.\\n\\nHe also runs App Ninja, a resource for mobile app developers which aims to help fellow coders with app templates, tutorials and blog posts on mobile app development. You can reach him to have a chat at Twitter, his website, or email.",
-              "image":"profileray.png",
+              "name":"Ray Wenderlich",
+              "title": "Site Admin",
+              "location": "Massanutten, VA",
+              "about": "Ray is an indie software developer currently focusing on iPhone and iPad development, and the administrator of this site. He’s the founder of a small iPhone development studio called Razeware, and is passionate both about making apps and teaching others the techniques to make them.\\n\\nWhen Ray’s not programming, he’s probably playing video games, role playing games, or board games.",
+              "image":"ray.png",
               "web": "http://www.raywenderlich.com",
-              "twitter": "http://www.twitter.com"
+              "twitter": "https://twitter.com/rwenderlich",
+              "facebook": "https://www.facebook.com/raywenderlich"
+              },
+              {
+              "name":"Brian Moakley",
+              "title": "Site Admin",
+              "location": "",
+              "about": "Brian is not only an iOS developer and fiction writer, he also holds the honor being Razeware‘s first fulltime employee. Brian joins Razeware with experience from companies such as ESPN’s online fantasy team and Disney’s Internet Group. When not writing or coding, Brian enjoys story driven first person shooters, lengthy Minecraft sessions, and any pickup game of Carcassonne.",
+              "image":"brianM.png",
+              "web": "http://www.raywenderlich.com",
+              "twitter": "https://twitter.com/zombietreats",
+              },
+              {
+              "name":"Brian Broom",
+              "title": "Tutorial Team Member",
+              "location": "",
+              "about": "Brian has been tinkering with computers since writing basic programs on IBM PC (with Two! floppy drives). He has done web, database, C++, ruby, and now iOS development. Brian has spent the last few years as a computer science teacher and trainer.",
+              "image":"brianB.png",
+              "web": "http://www.brianbroom.com",
+              "twitter": "http://www.twitter.com/bcbroom",
+              },
+              {
+              "name":"Charlie Fulton",
+              "title": "Tutorial Team Member",
+              "location": "",
+              "about": "Charlie Fulton is a full time iOS developer. He has worked with many languages and technologies in the past 16 years, and is currently specializing in iOS and Cocos2D development. In his spare time, Charlie enjoys hunting, fishing, and hanging out with his family.",
+              "image":"charlie.png",
+              "web": "http://www.raywenderlich.com",
+              "twitter": "http://www.twitter.com/charlie_fulton",
+              },
+              {
+              "name":"Felipe Laso Marsetti",
+              "title": "Tutorial Team Member",
+              "location": "",
+              "about": "Felipe Laso is an iOS developer working at Lextech Global Services. He’s also an aspiring game designer/programmer. You can follow him on Twitter as @airjordan12345 or on his blog.",
+              "image":"feli.png",
+              "web": "http://ife.li/",
+              "twitter": "http://twitter.com/airjordan12345",
+              },
+              {
+              "name":"Greg Pugh",
+              "title": "Tutorial Team Member",
+              "location": "",
+              "about": "Greg is a mobile app developer, animator, and Flash developer for his company GP Animations. He created the Colin Turtle eBook app series so his daughter could read books her father wrote for her. When Greg isn’t writing children’s books, he’s playing guitar, watching hockey, and enjoying a dram of scotch with a cigar.",
+              "image":"greg.png",
+              "web": "http://www.colinturtle.com/"
               
               },
               {
-              "name":"Ray Wenderlich",
-              "title": "Tutorial Team Member",
-              "location": "Massanutten, VA",
-              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore.",
-              "image":"profileray.png",
-              "web": "http://www.raywenderlich.com",
-              "twitter": "http://www.twitter.com",
-              "facebook": "http://www.facebook.com"
+              "name":"Matt Galloway",
+              "title": "Editorial Team",
+              "location": "",
+              "about": "Matt is the founder of SwipeStack, a mobile development company based in London, UK which create apps for clients and also a few of their own. One client's app was featured by Apple in the best apps of 2011, the App Rewind in the newsstand category.\\n\\nBeerMap is one of their own creations, helping beer drinkers find a great pub near them!",
+              "image":"matt.png",
+              "web": "http://www.swipestack.com/",
+              "twitter": "http://twitter.com/mattjgalloway",
               },
               {
-              "name":"Wenderlich Ray",
+              "name":"Cesare Rocchi",
               "title": "Tutorial Team Member",
-              "location": "Massanutten, VA",
-              "about": "Gabriel is the co-founder of Getting Real Software where he does iOS and backend development from Singapore. He specialises in helping businesses earn more money and streamline their processes using mobile technology.",
-              "image":"profileray.png",
-              "web": "http://www.raywenderlich.com",
-              "twitter": "http://www.twitter.com",
-              "facebook": "http://www.facebook.com"
+              "location": "",
+              "about": "Cesare Rocchi is a speaker, writer, UX designer and developer specializing in web and mobile applications. He began working on interactive applications while he was a researcher in the academia. He runs Studio Magnolia, an interactive studio that creates compelling web and mobile applications. He blogs at upbeat.it. You can find him on Twitter or app.net.\\n\\nWhen off duty he enjoys snowboard and beach tennis. Now he is busy working on Neater.",
+              "image":"cesare.png",
+              "web": "http://neater.co/",
+              "twitter": "http://twitter.com/_funkyboy",
               }
-  ]
+              
+                ]
 }
