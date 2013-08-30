@@ -8,10 +8,13 @@
 
 #import "CTMainViewController.h"
 #import "CTCardCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface CTMainViewController ()
 
 @property (strong, nonatomic) NSArray *members;
+@property (nonatomic, assign) CATransform3D initialTransformation;
+@property (nonatomic, strong) NSMutableSet *shownIndexes;
 
 @end
 
@@ -42,6 +45,40 @@
     self.members = json[@"team"];
         
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    
+    CGFloat rotationAngleDegrees = -15;
+    CGFloat rotationAngleRadians = rotationAngleDegrees * (M_PI/180);
+    CGPoint offsetPosition = CGPointMake(-20, -20);
+    
+    CATransform3D transform = CATransform3DIdentity;
+    transform = CATransform3DRotate(transform, rotationAngleRadians, 0.0, 0.0, 1.0);
+    transform = CATransform3DTranslate(transform, offsetPosition.x, offsetPosition.y, 0.0);
+    _initialTransformation = transform;
+    
+    _shownIndexes = [NSMutableSet set];
+    
+}
+
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (![self.shownIndexes containsObject:indexPath]) {
+        [self.shownIndexes addObject:indexPath];
+        
+        UIView *card = [(CTCardCell* )cell mainView];
+        
+        card.layer.transform = self.initialTransformation;
+        card.layer.opacity = 0.8;
+        
+        [UIView animateWithDuration:0.4 animations:^{
+            
+            // Move the cardview to it's original place
+            // by reseting the transform.
+            
+            card.layer.transform = CATransform3DIdentity;
+            card.layer.opacity = 1;
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning

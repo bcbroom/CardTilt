@@ -15,6 +15,7 @@
 		D3847F4417CFC6F90029132A /* greg.png in Resources */ = {isa = PBXBuildFile; fileRef = D3847F3C17CFC6F90029132A /* greg.png */; };
 		D3847F4517CFC6F90029132A /* matt.png in Resources */ = {isa = PBXBuildFile; fileRef = D3847F3D17CFC6F90029132A /* matt.png */; };
 		D3847F4617CFC6F90029132A /* ray.png in Resources */ = {isa = PBXBuildFile; fileRef = D3847F3E17CFC6F90029132A /* ray.png */; };
+		D3847F4817D032630029132A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3847F4717D032630029132A /* QuartzCore.framework */; };
 		D392E1BB17BDAE90002F87D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392E1BA17BDAE90002F87D9 /* UIKit.framework */; };
 		D392E1BD17BDAE90002F87D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392E1BC17BDAE90002F87D9 /* Foundation.framework */; };
 		D392E1BF17BDAE90002F87D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D392E1BE17BDAE90002F87D9 /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 		D3847F3C17CFC6F90029132A /* greg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greg.png; sourceTree = "<group>"; };
 		D3847F3D17CFC6F90029132A /* matt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matt.png; sourceTree = "<group>"; };
 		D3847F3E17CFC6F90029132A /* ray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ray.png; sourceTree = "<group>"; };
+		D3847F4717D032630029132A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D392E1B717BDAE90002F87D9 /* CardTilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D392E1BA17BDAE90002F87D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D392E1BC17BDAE90002F87D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3847F4817D032630029132A /* QuartzCore.framework in Frameworks */,
 				D392E1BB17BDAE90002F87D9 /* UIKit.framework in Frameworks */,
 				D392E1BD17BDAE90002F87D9 /* Foundation.framework in Frameworks */,
 				D392E1BF17BDAE90002F87D9 /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +86,7 @@
 		D392E1AE17BDAE90002F87D9 = {
 			isa = PBXGroup;
 			children = (
+				D3847F4717D032630029132A /* QuartzCore.framework */,
 				D392E1C017BDAE90002F87D9 /* CardTilt */,
 				D392E1B917BDAE90002F87D9 /* Frameworks */,
 				D392E1B817BDAE90002F87D9 /* Products */,
