@@ -55,12 +55,18 @@
     if (!twitter) {
         self.twImage.hidden = YES;
         self.twButton.hidden = YES;
+    } else {
+        self.twImage.hidden = NO;
+        self.twButton.hidden = NO;
     }
     
     facebook = [dictionary valueForKey:@"facebook"];
     if (!facebook) {
         self.fbImage.hidden = YES;
         self.fbButton.hidden = YES;
+    } else {
+        self.fbImage.hidden = NO;
+        self.fbButton.hidden = NO;
     }
 }
 
