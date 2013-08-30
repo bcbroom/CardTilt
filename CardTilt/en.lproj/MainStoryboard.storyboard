@@ -172,31 +172,6 @@
         <image name="fb.png" width="14" height="28"/>
         <image name="twitter.png" width="32" height="22"/>
     </resources>
-    <classes>
-        <class className="CTCardCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CTCardCell.h"/>
-            <relationships>
-                <relationship kind="action" name="launchFacebook:"/>
-                <relationship kind="action" name="launchTwitter:"/>
-                <relationship kind="action" name="launchWeb:"/>
-                <relationship kind="outlet" name="aboutLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="fbButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="fbImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="locationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="profilePhoto" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="twButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="twImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="webButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="webLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CTMainViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CTMainViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
