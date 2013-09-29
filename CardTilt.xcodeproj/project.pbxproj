@@ -177,6 +177,11 @@
 				CLASSPREFIX = CT;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Brian Broom";
+				TargetAttributes = {
+					D392E1B617BDAE90002F87D9 = {
+						DevelopmentTeam = 4Y6M6427KP;
+					};
+				};
 			};
 			buildConfigurationList = D392E1B217BDAE90002F87D9 /* Build configuration list for PBXProject "CardTilt" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -315,6 +320,7 @@
 		D392E1DB17BDAE90002F87D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardTilt/CardTilt-Prefix.pch";
 				INFOPLIST_FILE = "CardTilt/CardTilt-Info.plist";
@@ -326,6 +332,7 @@
 		D392E1DC17BDAE90002F87D9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardTilt/CardTilt-Prefix.pch";
 				INFOPLIST_FILE = "CardTilt/CardTilt-Info.plist";

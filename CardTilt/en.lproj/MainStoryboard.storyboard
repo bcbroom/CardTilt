@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4J9-Z4-XlD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4J9-Z4-XlD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -9,23 +10,23 @@
             <objects>
                 <tableViewController id="4J9-Z4-XlD" customClass="CTMainViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="280" sectionHeaderHeight="22" sectionFooterHeight="22" id="chs-cS-NGS">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Card" rowHeight="280" id="h9m-2R-9Yr" customClass="CTCardCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="280"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="279"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h9m-2R-9Yr" id="DkX-tC-H8Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="280"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" id="hDK-Vk-Z1s" userLabel="mainView">
-                                            <rect key="frame" x="16" y="16" width="287" height="250"/>
+                                            <rect key="frame" x="16" y="16" width="287" height="251"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" id="JSb-Pz-hcx" userLabel="cardbg">
-                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="226"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="227"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" id="h4J-yd-wJG" userLabel="photo">
@@ -59,7 +60,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lorem ipsum dolor sit amet, consectetur " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y1b-hk-UUv" userLabel="aboutLabel">
-                                                            <rect key="frame" x="10" y="191" width="268" height="15"/>
+                                                            <rect key="frame" x="10" y="191" width="268" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
                                                             <color key="textColor" white="0.37970460766423358" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +70,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" id="1jW-cb-Orz" userLabel="footerbg">
-                                                    <rect key="frame" x="0.0" y="226" width="287" height="24"/>
+                                                    <rect key="frame" x="0.0" y="227" width="287" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="www.website.com" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wOb-ax-pU4" userLabel="webLabel">
@@ -139,8 +140,8 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="aboutLabel" destination="y1b-hk-UUv" id="HSt-hf-QPy"/>
                                     <outlet property="fbButton" destination="DEX-Yr-PbS" id="4Z0-Mz-uLo"/>
