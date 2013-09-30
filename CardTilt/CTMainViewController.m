@@ -107,8 +107,22 @@
     NSString *aboutText = _members[indexPath.row][@"about"];
     NSString *newlineString = @"\n";
     NSString *newAboutText = [aboutText stringByReplacingOccurrencesOfString:@"\\n" withString:newlineString];
-    CGSize aboutSize = [newAboutText sizeWithFont:font
-                              constrainedToSize:CGSizeMake(268, 4000)];
+
+    
+    CGSize aboutSize = [newAboutText sizeWithFont:font constrainedToSize:CGSizeMake(268, 4000)];
+    
+    // if deployment target is iOS7 and you want to get rid of the warning above
+    // comment the line above and uncomment the following section
+    
+    // ios 7 only
+    //CGRect boundingRect = [newAboutText boundingRectWithSize:CGSizeMake(268, 4000)
+    //                                     options:NSStringDrawingUsesLineFragmentOrigin
+    //                                  attributes:@{NSFontAttributeName:font}
+    //                                     context:nil];
+    //
+    //CGSize boundingSize = boundingRect.size;
+    // end ios7 only
+
     
     return (280-15+aboutSize.height);
 }
