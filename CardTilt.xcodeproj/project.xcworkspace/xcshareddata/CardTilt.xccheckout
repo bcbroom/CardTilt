@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90553EAD-AC63-4D88-93A9-D20C84884366</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CardTilt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C1271D30-8211-49AF-A570-1FD3E67E130A</key>
+		<string>ssh://github.com/bcbroom/CardTilt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CardTilt.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C1271D30-8211-49AF-A570-1FD3E67E130A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/bcbroom/CardTilt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C1271D30-8211-49AF-A570-1FD3E67E130A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C1271D30-8211-49AF-A570-1FD3E67E130A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CardTilt</string>
+		</dict>
+	</array>
+</dict>
+</plist>
